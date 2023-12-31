@@ -1,0 +1,82 @@
+@page "/register"
+@using BookstoreWebApp.Services
+@using Auth.Services
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+
+@if (_showErrors)
+{
+    <div class="alert alert-danger" role="alert">
+        <p>@_error</p>
+    </div>
+}
+
+<PageTitle>Kayıt Ol</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="6" Offset="3">
+        <RadzenCard Variant="Radzen.Variant.Flat" Style="float: none; visibility: visible; border-radius: 12px">
+            <RadzenTemplateForm TItem="RegisterRequest" Data=@_registerModel Submit=@HandleRegistration>
+                <RadzenStack>
+                    <RadzenRow>
+                        <RadzenText Text="E-mail" Style="width: 185px; height: 50px; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px"/>
+                        <RadzenTextBox Name="Email" @bind-Value=@_email Placeholder="example@mail.com" Style="width: 458px; height: 50px"/>
+                        <RadzenText Style="width: 185px; height: 20px; visibility: hidden"/>
+                        <RadzenEmailValidator Component="Email" Text="Geçerli bir mail adresi giriniz" Popup="false"/>
+                    </RadzenRow>
+                    <RadzenRow>
+                        <RadzenText Text="Şifre" Style="width: 185px; height: 50px; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px"/>
+                        <RadzenPassword @bind-Value=@_password Style="height: 50px; width: 458px"></RadzenPassword>
+                        <RadzenText Style="width: 185px; height: 20px; visibility: hidden"/>
+                    </RadzenRow>
+                    <RadzenRow>
+                        <RadzenText Text="Şifre (Tekrar)" Style="width: 185px; height: 50px; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px"/>
+                        <RadzenPassword @bind-Value=@_passwordAgain Style="width: 458px; height: 50px"></RadzenPassword>
+                        <RadzenText Style="width: 185px; height: 20px; visibility: hidden"/>
+                    </RadzenRow>
+                    <RadzenRow>
+                        <RadzenText Style="width: 185px; height: 50px; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px; visibility: hidden"/>
+                        <RadzenButton ButtonType="ButtonType.Submit" Text="Kayıt Ol"  Style="width: 120px"/>
+                    </RadzenRow>
+                </RadzenStack>
+            </RadzenTemplateForm>
+        </RadzenCard>
+    </RadzenColumn>
+</RadzenRow>
+
+
+@code {
+
+    private RegisterRequest _registerModel = new();
+    private bool _showErrors;
+    private string _email;
+    private string _password;
+    private string _passwordAgain;
+    private string? _error;
+
+    private async Task HandleRegistration()
+    {
+        _showErrors = false;
+        
+        if (_password != _passwordAgain)
+        {
+            _error = "Şifreler eşleşmiyor";
+            _showErrors = true;
+            return;
+        }
+        _registerModel.Email = _email;
+        _registerModel.Password = _password;
+        
+        var result = await AuthService.Register(_registerModel);
+
+        if (result.Successful)
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+        else
+        {
+            _error = result.Error;
+            _showErrors = true;
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+@page "/book-card"
+
+<RadzenColumn>
+    <RadzenLayout Style="width: 615px; height: 520px; border-radius: 16px">
+        <RadzenImage Path="@Book.ImageUrl" Style="max-height: 450px; max-width: 300px; margin: 16px;"></RadzenImage>
+        <RadzenColumn>
+            <RadzenText Text="@Book.Title" TagName="TagName.H3" TextStyle="TextStyle.H3" Style="margin: 16px 0px 0px 16px; margin-left: 8px"/>
+            <RadzenText Text="@Book.Author" Style="font-style: italic; margin: 0px 0px 0px 16px; margin-left: 8px" TagName="TagName.H5" TextStyle="TextStyle.H5"/>
+            <RadzenText Text="@Book.Description" Style="text-align: justify; margin: 16px; margin-left: 8px; margin-top: 8px; margin-bottom: 0px"/>
+            <RadzenText Text=@string.Format("{0} TL", Book.Price) TextAlign="TextAlign.Right" TextStyle="TextStyle.H4" Style="margin: 16px; font-weight: bold; color: #971e45; margin-left: 8px; margin-top: 8px; margin-right: 8px; margin-bottom: 8px"/>
+            <RadzenButton Visible="@AuthService.IsUserLoggedIn()" Text="Sepete Ekle" Style="margin: 16px; margin-top: 0px; width: 130px; margin-left: 100px; margin-right: 0px; margin-bottom: 0px"/>
+        </RadzenColumn>
+    </RadzenLayout>
+</RadzenColumn>

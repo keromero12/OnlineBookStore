@@ -1,0 +1,38 @@
+@page "/login"
+
+@if (_showErrors)
+{
+    <div class="alert alert-danger" role="alert">
+        <p>@_error</p>
+    </div>
+}
+
+<PageTitle>Giriş Yap</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="6" Offset="3">
+        <RadzenCard Variant="Radzen.Variant.Flat" Style="float: none; visibility: visible">
+            <RadzenTemplateForm TItem="dynamic">
+                <RadzenStack>
+                    <RadzenLogin Username=""
+                                 registermessage
+                                 Login=@(args => HandleLogin(args))
+                                 Register=@(args => HandleRegister("Register with default values"))
+                                 LoginText="Giriş Yap"
+                                 PasswordRequired="Şifre Gerekli"
+                                 PasswordText="Şifre"
+                                 RegisterMessageText="Hesabınız yok mu?"
+                                 RegisterText="Kayıt Ol"
+                                 RememberMeText="Beni Hatırla"
+                                 RememberMe="true"
+                                 AllowRememberMe="true"
+                                 ResetPasswordText="Şifrenizi mi unuttunuz?"
+                                 UserNameAutoCompleteType="Radzen.Blazor.AutoCompleteType.Email"
+                                 UserRequired="E-Mail Gerekli"
+                                 UserText="E-Mail"
+                                 Style="float: none; 
+                        text-align: left"/>
+                </RadzenStack>
+            </RadzenTemplateForm>
+        </RadzenCard>
+    </RadzenColumn>
+</RadzenRow>

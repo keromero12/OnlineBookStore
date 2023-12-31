@@ -1,0 +1,42 @@
+// Authentication icin kullanilacak servisin protobuf tanimi
+// Bu dosyayi kullanarak C# tarafinda gerekli kodlari olusturacagiz
+
+syntax = "proto3"; // Hangi proto surumunu kullandigimizi belirtiyoruz
+
+option csharp_namespace = "Auth.Services"; // C# tarafinda namespace olarak hangi isimde kullanilacagini belirtiyoruz
+
+package auth; // Bu servisin hangi package icinde oldugunu belirtiyoruz
+
+// Authentication servisi taniminin yapildigi yer
+service AuthService {
+  // Login ve Register islemleri icin iki rpc endpointi tanimliyoruz
+  rpc Login (LoginRequest) returns (LoginResponse); // LoginRequest tipinde bir parametre alip LoginResponse tipinde bir deger dondurecek
+  rpc Register (RegisterRequest) returns (RegisterResponse); // RegisterRequest tipinde bir parametre alip RegisterResponse tipinde bir deger dondurecek
+}
+
+// Login icin kullanilacak request icerigi
+// username ve password alanlarini iceren bir LoginRequest mesaji tanimliyoruz
+message LoginRequest {
+  string email = 1;
+  string password = 2;
+  bool remember = 3; 
+}
+
+// Response olarak donulecek LoginResponse mesaji tanimliyoruz
+message LoginResponse {
+  bool successful = 1; // Login islemi sonucunda donulecek basarili mi degil mi bilgisi
+  string token = 2;  // Login islemi sonucunda donulecek token
+  string error = 3;  // Login islemi sonucunda donulecek hata mesaji
+}
+
+// Register icin kullanilacak request icerigi
+message RegisterRequest {
+  string email = 1; //
+  string password = 2; //
+}
+
+// Response olarak donulecek RegisterResponse mesaji tanimliyoruz
+message RegisterResponse {
+  bool successful = 1; // Register islemi sonucunda donulecek basarili mi degil mi bilgisi
+  string error = 2; // Register islemi sonucunda donulecek hata mesaji
+}

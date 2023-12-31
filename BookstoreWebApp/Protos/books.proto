@@ -1,0 +1,65 @@
+// BookService servisimizin protobuf dosyası
+// Bu dosyayı kullanarak gRPC servisimizin client ve server kodlarını oluşturacağız.
+
+syntax = "proto3"; // Bu dosyanın protobuf versiyonu
+
+option csharp_namespace = "BookStore.Services"; // C# namespace'i
+
+package bookstore; // Bu dosyanın package'i
+
+// BookService servisimiz
+service BookService {
+  // Kitap bilgilerini getirir.
+  rpc GetBook (GetBookRequest) returns (GetBookResponse); // GetBookRequest ile GetBookResponse mesajlarını kullanır.
+
+  // Yeni bir kitap oluşturur.
+  rpc CreateBook (CreateBookRequest) returns (CreateBookResponse); // CreateBookRequest ile CreateBookResponse mesajlarını kullanır.
+
+  // Tüm kitapları listeler.
+  rpc ListBooks (ListBooksRequest) returns (ListBooksResponse); // ListBooksRequest ile ListBooksResponse mesajlarını kullanır.
+}
+
+// Kitap servisimiz için kullanacağımız mesajlar
+
+// GetBooKRequest mesajı
+message GetBookRequest {
+  int32 id = 1; // Kitap id'si
+}
+
+// Book mesajı ile kitap bilgilerini belirliyoruz.
+message Book {
+  int32 id = 1; // Kitap id'si
+  string title = 2; // Kitap adı 
+  string author = 3; // Kitap yazarı
+  string description = 4; // Kitap açıklaması
+  double price = 5; // Kitap fiyatı 
+  string imageUrl = 6; // Kitap resmi
+}
+
+// GetBookResponse mesajı
+message GetBookResponse {
+  Book book = 1; // Kitap bilgileri
+}
+
+// CreateBookRequest mesajı ile kitap oluşturmak için kullanacağımız bilgiler
+message CreateBookRequest {
+  string title = 1; // Kitap adı
+  string author = 2; // Kitap yazarı
+  string description = 3; // Kitap açıklaması
+  double price = 4; // Kitap fiyatı
+  string imageUrl = 5; // Kitap resmi
+}
+
+// CreateBookResponse mesajı ile oluşturulan kitabın bilgilerini döndüreceğiz.
+message CreateBookResponse {
+  Book book = 1; // Kitap bilgileri
+}
+
+// ListBooksRequest mesajı ile kitapları listelemek için mesajımızda herhangi bir bilgiye ihtiyacımız yok.
+message ListBooksRequest {}
+
+// ListBooksResponse mesajı ile kitapları listelerken döndüreceğimiz bilgileri belirliyoruz.
+message ListBooksResponse {
+  repeated Book books = 1; // Kitap bilgileri listesi (repeated ile liste olarak belirtiyoruz)
+}
+

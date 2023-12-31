@@ -1,0 +1,11 @@
+@page "/"
+
+<PageTitle>Ana Sayfa</PageTitle>
+<RadzenRow RowGap="2rem" Gap="2rem">
+    @foreach (var item in _books)
+    {
+        <BookCard Book=item></BookCard>
+    }
+     
+</RadzenRow>
+

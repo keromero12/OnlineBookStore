@@ -1,0 +1,221 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\obj\\Debug\\net7.0\\compressed\\nicvyqmas9.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BookstoreWebApp.styles.css",
+      "PackagePath": "staticwebassets\\BookstoreWebApp.styles.css"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\material3-base.css",
+      "PackagePath": "staticwebassets\\css\\material3-base.css"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-Black.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-Black.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-BlackIt.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-Bold.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-BoldIt.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-ExtraLight.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-It.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-It.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-Light.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-LightIt.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-Regular.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-Semibold.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "PackagePath": "staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-regular.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v15-latin-300.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v15-latin-300.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v15-latin-700.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v15-latin-700.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v15-latin-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v30-latin-300.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v30-latin-300.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v30-latin-500.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v30-latin-500.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v30-latin-700.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v30-latin-700.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\fonts\\roboto-v30-latin-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto-v30-latin-regular.woff"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\images\\login.jpg",
+      "PackagePath": "staticwebassets\\images\\login.jpg"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\images\\logo-login.png",
+      "PackagePath": "staticwebassets\\images\\logo-login.png"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\service-worker.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\workspace\\OnlineBookstoreSolution\\BookstoreWebApp\\wwwroot\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.published.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BookstoreWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BookstoreWebApp.props",
+      "PackagePath": "build\\BookstoreWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BookstoreWebApp.props",
+      "PackagePath": "buildMultiTargeting\\BookstoreWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BookstoreWebApp.props",
+      "PackagePath": "buildTransitive\\BookstoreWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

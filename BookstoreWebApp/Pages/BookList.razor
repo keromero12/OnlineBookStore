@@ -1,0 +1,33 @@
+@page "/books"
+@using BookstoreWebApp.Services
+@using BookStore.Services
+@using System.Collections.Concurrent
+@inject IBookService BookService
+
+<h3>Book List</h3>
+
+@if (_books == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <ul>
+        @foreach (var book in _books)
+        {
+            <li>@book.Title - @book.Author</li>
+        }
+    </ul>
+}
+
+@code {
+    private ConcurrentBag<Book> _books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _books = await BookService.GetAllBooks();
+    }
+
+}
